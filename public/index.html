@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bappa Blessing</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <!-- College / Department Image -->
+            <img
+                src="collage-banner.png"
+                class="college-banner"
+                alt="Artificial Intelligence and Data Science - Ashokrao Mane Group of Institutions"
+            >
+
+           
+
+            <!-- Title -->
+            <h1>Bappa Blessing</h1>
+
+            <p class="subtitle">
+                Tell Bappa what is in your heart...
+            </p>
+
+
+            <!-- Form -->
+            <form id="blessingForm">
+
+                <!-- Language -->
+                <div class="form-group">
+
+                    <label for="language">
+                        Choose Language
+                    </label>
+
+                    <select id="language" required>
+
+                        <option value="en">
+                            English
+                        </option>
+
+                        <option value="mr">
+                            मराठी
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Name -->
+                <div class="form-group">
+
+                    <label for="name">
+                        Your Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Wish -->
+                <div class="form-group">
+
+                    <label for="wish">
+                        What is your wish?
+                    </label>
+
+                    <textarea
+                        id="wish"
+                        placeholder="Tell Bappa what you are praying for..."
+                        rows="4"
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- Mood -->
+                <div class="form-group">
+
+                    <label for="mood">
+                        How are you feeling?
+                    </label>
+
+                    <select id="mood" required>
+
+                        <option value="">
+                            Choose your feeling
+                        </option>
+
+                        <option value="happy">
+                            😊 Happy
+                        </option>
+
+                        <option value="hopeful">
+                            ✨ Hopeful
+                        </option>
+
+                        <option value="worried">
+                            🥺 Worried
+                        </option>
+
+                        <option value="confused">
+                            😕 Confused
+                        </option>
+
+                        <option value="sad">
+                            💙 Sad
+                        </option>
+
+                        <option value="grateful">
+                            🙏 Grateful
+                        </option>
+
+                        <option value="excited">
+                            🌸 Excited
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Category -->
+                <div class="form-group">
+
+                    <label for="category">
+                        What would you like Bappa's blessings for?
+                    </label>
+
+                    <select id="category" required>
+
+                        <option value="">
+                            Choose a category
+                        </option>
+
+                        <option value="career">
+                            💼 Career
+                        </option>
+
+                        <option value="studies">
+                            📚 Studies
+                        </option>
+
+                        <option value="family">
+                            🏠 Family
+                        </option>
+
+                        <option value="relationships">
+                            ❤️ Relationships
+                        </option>
+
+                        <option value="success">
+                            🌟 Success
+                        </option>
+
+                        <option value="peace">
+                            🕊️ Peace of mind
+                        </option>
+
+                        <option value="new beginning">
+                            🌱 New Beginning
+                        </option>
+
+                        <option value="other">
+                            🙏 Something else
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Submit -->
+                <button type="submit">
+                    🪔 Receive Bappa's Blessing
+                </button>
+
+            </form>
+
+
+            <!-- Result -->
+            <div id="result" class="result hidden">
+
+                <h2>
+                    🌺 Receive
+                </h2>
+
+                <p id="blessingText"></p>
+
+                <button
+                    type="button"
+                    id="againButton"
+                    class="again-button"
+                >
+                    ✨ Generate Again
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
